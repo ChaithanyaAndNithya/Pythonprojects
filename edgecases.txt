@@ -1,0 +1,3 @@
+Good job! Now see if you can account for these edge cases:
+1. What if the user enters a wrong number? (ie, 3.45 or 67 or something) 
+2. What if the user wants to stop playing or resign?
