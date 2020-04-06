@@ -1,6 +1,8 @@
 # This program will take the user's user id and password.
-#He/she can log in again any number of times.
-#This program will also be able to take multiple users's info
+# He/she can log in again any number of times.
+# This program will also be able to take multiple users's info
+# I'll do one with sqlite(database) because we might store a lot of userid/passwords.
+#In the project with a db, I will also use emails for password recovery
 
 
 infodic = dict()
