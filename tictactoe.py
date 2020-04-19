@@ -19,36 +19,25 @@ for i in range(9) :
     print(" ", poslst[3], "  | ", poslst[4], "  | ", poslst[5], "   ")
     print("___________________")
     print(" ", poslst[6], "  | ", poslst[7], "  | ", poslst[8], "   ")
-    if poslst[0] == poslst[1] == poslst[2] == "X" or poslst[0] == poslst[1] == poslst[2] == "O" :
-         print(poslst[0], "is the winner")
-         break
-    elif poslst[0] == poslst[3] == poslst[6] == "X" or poslst[0] == poslst[3] == poslst[6] == "O" :
-        print(poslst[0], "is the winner")
-        y = y + 1
-        break
-    elif poslst[0] == poslst[4] == poslst[8] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[0], "is the winner")
-        y = y + 1
-        break
-    elif poslst[1] == poslst[4] == poslst[7] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[1], "is the winner")
-        y = y + 1
-        break
-    elif poslst[2] == poslst[2] == poslst[6] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[2], "is the winner")
-        y = y + 1
-        break
-    elif poslst[2] == poslst[5] == poslst[8] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[2], "is the winner")
-        y = y + 1
-        break
-    elif poslst[3] == poslst[4] == poslst[5] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[3], "is the winner")
-        y = y + 1
-        break
-    elif poslst[6] == poslst[7] == poslst[8] == "X" or poslst[0] == poslst[3] == poslst[6] == "O":
-        print(poslst[6], "is the winner")
-        y = y + 1
-        break
+	a = ['X', 'X', 'X']
+	b = ['O', 'O', 'O']
+    for i in range (0, 3, 6):
+		if poslst[i] == poslst[i+1] == poslst[i+2] :
+			print(poslst[i], "is the winner")
+			y = y+1
+			break
+	for i in range (0, 1, 2) :
+		if poslst[i] == poslst[i+3] == poslst[i+6] :
+			print(poslst[i], "is the winner")
+			y = y + 1
+			break
+	if poslst[0] == poslst[4] == poslst[8] :
+		print(poslst[0], "is the winner")
+		y = y + 1
+		break
+	elif poslst[2] == poslst[4] == poslst[6] :
+		print(poslst[2], "is the winner")
+		y = y + 1
+		break
 if y != 1 :
     print("It's a draw")
